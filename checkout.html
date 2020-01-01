@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Layout Udemy</title>
+    <!-- Required meta tags  b4-$ cach mo html co boostrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style1.css">
+</head>
+
+<body>
+
+    <!-- START HEADER -->
+    <header class="header container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light m-0 p-0 d-flex" style="width: 100%">
+            <button class="navbar-toggler  d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <span class="search">
+                <button class="btn btn-warning"><i class="fa fa-search"></i></button>
+            </span> -->
+            <div class="col-lg-9 col-xl-7 col-md-8 col-sm-6">
+                <div class="row">
+                    <a class="navbar-brand logoheader" href="index.html">
+                        <img src="./img/logo-coral.svg">
+                    </a>
+                    <div class="giohang2">
+                        <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="header_search2">
+                        <form action="">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Search for anything">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="header_categories h_cate">
+                        <i class="fa fa-th"></i>Categories
+                    </div>
+
+                    <div class="header_search">
+                        <form action="">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Search for anything">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xl-5 col-md-4 col-sm-6">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link businesstop" href="#">Udemy for Business</a>
+                        </li>
+                        <li class="nav-item teachtop">
+                            <a class="nav-link" href="#">Teach on Udemy</a>
+                        </li>
+                        <li class="nav-item giohang">
+                            <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="button d-flex">
+                                <button class="btn button--white mr-2" data-toggle="modal" data-target="#login">Log
+                                    In</button>
+                                <button class="btn button--red" data-toggle="modal" data-target="#signup">Sign
+                                    Up</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="border-bt"></div>
+    <!-- Modal LogIn -->
+    <div class="modal fade " id="login" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content modalLogin">
+                <div class="modal-header">
+                    <div class="modalTitle ">Log In to Your Udemy Account!</div>
+                    <button type="button" class="close mr-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="iconLogin mt-3">
+                        <img src='./img/logo-coral.svg'>
+                    </div>
+                    <br>
+                    <div class="form-group mx-3 ">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"> <i
+                                        class="fa fa-user iconUser"></i></span>
+                            </div>
+                            <input type="text" autofocus class="form-control" placeholder="Username"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span for='pass' class="input-group-text" id="basic-addon1"> <i
+                                        class="fa fa-lock"></i></span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Password" aria-label="Password"
+                                aria-describedby="basic-addon1">
+                        </div>
+
+                        <button class="btn button-login mb-3">Log In</button>
+                        <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with"
+                            data-auto-logout-link="false" data-use-continue-as="false"></div>
+                        <p>or <a href="#">Forgot Password</a></p>
+                        <span> Don't have an account? <a href="#">Sign up</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Modal LogIn -->
+    <!-- Modal Sign Up -->
+    <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content modalLogin">
+                <div class="modal-header">
+                    <div class="modalTitle ">Sign Up and Start Learning!</div>
+                    <button type="button" class="close mr-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="iconLogin mt-3">
+                        <img src='./img/logo-coral.svg'>
+                    </div>
+                    <br>
+                    <div class="form-group mx-3 ">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"> <i
+                                        class="fa fa-user iconUser"></i></span>
+                            </div>
+                            <input type="text" autofocus class="form-control" placeholder="Username"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span for='pass' class="input-group-text" id="basic-addon1"> <i
+                                        class="fa fa-lock"></i></span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Password" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fa fa-user-circle"></i>
+                                </span>
+                            </div>
+                            <input type="text" autofocus class="form-control" placeholder="FullName"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                            </div>
+                            <input type="mail" autofocus class="form-control" placeholder="Email" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fa fa-phone"></i>
+                                </span>
+                            </div>
+                            <input type="number" autofocus class="form-control" placeholder="Phone Number"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <button class="btn button-login mb-3">Sign Up</button>
+
+                        <span> Already have an account? <a href="#"> Log In</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Modal Sign Up -->
+    <!-- END HEADER -->
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-7 checkout-left">
+                <div class="checkout-title">Checkout</div>
+                <div class="checkout-form">
+                    <div class="form-group">
+                        <label style="font-size: 20px" class="mx-2" for="newpayment">
+                            <input type="radio" name="newpayment" id="newpayment" autocomplete="off" required>
+                            New Payment Card</label>
+                        <img style="width: 220px" src="./img/payment-img.png" alt="payment">
+                    </div>
+                    <div class="form-group pb-0">
+                        <input type="text" onfocus="" class="form-control" name="nameCard" id="nameCard"
+                            aria-describedby="helpId" placeholder="Name on Card">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="cardNumber" id="cardNumber"
+                            aria-describedby="helpId" placeholder="Card Number">
+                    </div>
+                    <div class="row">
+                        <div class="col-6 pr-0">
+                            <div class="form-group inputSmall-l">
+                                <input type="text" class="form-control " name="date" id="date" aria-describedby="helpId"
+                                    placeholder="MM/YY">
+                            </div>
+                        </div>
+                        <div class="col-6 pl-0">
+                            <div class="form-group inputSmall-r">
+                                <input type="text" class="form-control " name="securityCode" id="securityCode"
+                                    aria-describedby="helpId" placeholder="Security Code">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 pr-0">
+                            <div class="form-group inputSmall-l">
+
+                                <select class="form-control" id="select">
+                                    <option>VietNam</option>
+                                    <option>Japan</option>
+                                    <option>American</option>
+                                    <option>Singapore</option>
+                                    <option>United Kingdom</option>
+                                    <option>Turkey</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6 pl-0">
+                            <div class="form-group inputSmall-r">
+                                <input type="text" class="form-control " name="postalcode" id="postalcode"
+                                    aria-describedby="helpId" placeholder="Zip/Postal Code">
+                            </div>
+                        </div>
+                        <div class="form-group pt-0">
+                            <label class="ml-3">
+                                <input type="checkbox" name="checkbox" id="checkbox" checked autocomplete="off"> Remember this card
+                            </label>
+                            <br>
+                            <small id="helpId" class="text-muted">By completing your purchase you agree to these <small style="font-weight: 700; color: #007791;">Terms of Service</small> .
+                            </small>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 checkout-right">
+                <div class="advertisement">
+                    <div class="ad-inside">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td style="width: 100%; line-height: 24px; ">Original price:</td>
+                                    <td>$0</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 100%; line-height: 24px;">Coupon discounts:</td>
+                                    <td>$0</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 100%; line-height: 24px;">
+                                        <div class="ad-title mt-1">Total:</div>
+                                    </td>
+                                    <td><b>$0.0</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="btn button-login mt-3">Complete Payment</button>
+                        <button class="btn button--white btn-block mt-3">Continue Shopping</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END CHECKOUT-->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        var $radioold = $('input[name=thing]:checked');
+        $('#NetVersion input').on('change', function () {
+            var $radio = $('input[name=thing]:checked');
+            var id = $radio.attr('id');
+            var idold = $radioold.attr('id');
+            $radioold = $radio;
+            $('#' + id + 'View').show();
+            $('#' + idold + 'View').hide();
+        });
+    </script>
+
+</body>
+
+</html>

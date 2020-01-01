@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Basic infomation </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../css/style1.css">
+</head>
+
+<body>
+    <!-- START HEADER -->
+    <header class="header mb-5">
+        <nav class="navbar navbar-expand-md navbar-light m-0 p-0 d-flex" style="width: 100%">
+            <button class="navbar-toggler  d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <span class="search">
+                <button class="btn btn-warning"><i class="fa fa-search"></i></button>
+            </span> -->
+            <div class="col-lg-9 col-xl-7 col-md-8 col-sm-6">
+                <div class="row">
+                    <a class="navbar-brand logoheader" href="index.html">
+                        <img src="../img/logo-coral.svg">
+                    </a>
+                    <div class="giohang2">
+                        <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="header_search2">
+                        <form action="">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Search for anything">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="header_categories h_cate">
+                        <i class="fa fa-th"></i>Categories
+                    </div>
+
+                    <div class="header_search">
+                        <form action="">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Search for anything">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xl-5 col-md-4 col-sm-6">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link businesstop" href="#">Udemy for Business</a>
+                        </li>
+                        <li class="nav-item teachtop">
+                            <a class="nav-link" href="#">Teach on Udemy</a>
+                        </li>
+                        <li class="nav-item giohang">
+                            <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="button d-flex">
+                                <button class="btn button--white mr-2" data-toggle="modal" data-target="#login">Log
+                                    In</button>
+                                <button class="btn button--red" data-toggle="modal" data-target="#signup">Sign
+                                    Up</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Modal LogIn -->
+    <div class="modal fade " id="login" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content modalLogin">
+                <div class="modal-header">
+                    <div class="modalTitle ">Log In to Your Udemy Account!</div>
+                    <button type="button" class="close mr-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="iconLogin mt-3">
+                        <img src='./img/logo-coral.svg'>
+                    </div>
+                    <br>
+                    <div class="form-group mx-3 ">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"> <i
+                                        class="fa fa-user iconUser"></i></span>
+                            </div>
+                            <input type="text" autofocus class="form-control" placeholder="Username"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span for='pass' class="input-group-text" id="basic-addon1"> <i
+                                        class="fa fa-lock"></i></span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Password" aria-label="Password"
+                                aria-describedby="basic-addon1">
+                        </div>
+
+                        <button class="btn button-login mb-3">Log In</button>
+                        <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with"
+                            data-auto-logout-link="false" data-use-continue-as="false"></div>
+                        <p>or <a href="#">Forgot Password</a></p>
+                        <span> Don't have an account? <a href="#">Sign up</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Modal LogIn -->
+    <!-- Modal Sign Up -->
+    <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content modalLogin">
+                <div class="modal-header">
+                    <div class="modalTitle ">Sign Up and Start Learning!</div>
+                    <button type="button" class="close mr-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="iconLogin mt-3">
+                        <img src='./img/logo-coral.svg'>
+                    </div>
+                    <br>
+                    <div class="form-group mx-3 ">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"> <i
+                                        class="fa fa-user iconUser"></i></span>
+                            </div>
+                            <input type="text" autofocus class="form-control" placeholder="Username"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span for='pass' class="input-group-text" id="basic-addon1"> <i
+                                        class="fa fa-lock"></i></span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Password" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fa fa-user-circle"></i>
+                                </span>
+                            </div>
+                            <input type="text" autofocus class="form-control" placeholder="FullName"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                            </div>
+                            <input type="mail" autofocus class="form-control" placeholder="Email" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fa fa-phone"></i>
+                                </span>
+                            </div>
+                            <input type="number" autofocus class="form-control" placeholder="Phone Number"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <button class="btn button-login mb-3">Sign Up</button>
+
+                        <span> Already have an account? <a href="#"> Log In</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Modal Sign Up -->
+    <!-- END HEADER -->
+
+    <div class="container">
+        
+        <div class="table">
+            <div class="inside">
+                <div class="left">
+                    <div class="imgUser">
+                        <img src="../img/userIcon.svg" />
+                    </div>
+
+                    <h3>UserName</h3>
+
+                    <ul class="list-unstyled">
+                        <li class="active"><a href="../InfoBasic/publicProfile.html">View public profile</a></li>
+                        <li><a href="../InfoBasic/profile.html">Profile</a></li>
+                        <li><a href="../InfoBasic/Photo.html">Photo</a></li>
+                        <li><a href="#">Payment methods</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Notifications</a></li>
+                        <li><a href="#">API clients</a></li>
+                        <li><a href="#">Close account</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="title">
+                        <h2>Public profile</h2>
+                        <p>Add information about yourself</p>
+                    </div>
+                    <form action="/action_page.php">
+                        <div class="form">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Birthday</label>
+                                <input type="date" name="name" id="name" class="form-control" placeholder=""
+                                    aria-describedby="helpId">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" id="email">
+                                <small id="helpId" class="text-muted">Update your email.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number:</label>
+                                <input type="number" class="form-control" id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Links:</label>
+                                <input type="text" class="form-control" placeholder="Website (http://..)" id="address">
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Description</label>
+                                <textarea class="form-control" name="description" id="description" rows="5">
+                                </textarea>
+                                <small id="helpId" class="text-muted">Links and coupon codes are not permitted in this section.</small>
+                            </div>
+                        </div>
+                        <div class="text-center my-3">
+                            <button type="submit" class="btn button--red">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- START FOOTER-->
+    <footer class="footer mt-5">
+        <div class="footerup ">
+            <div class="row">
+                <div class="col-md-3 footerup1 ft-3">
+                    <ul>
+                        <li class="active"><a href="#">Udemy for Business</a></li>
+                        <li class="active"><a href="#">Teach on Udemy</a></li>
+                        <li><a href="#"">Udemy app</a></li>
+                        <li><a href=" #">About us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footerup1 ft-3">
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#"">Help and Support</a></li>
+                        <li><a href=" #">Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footerup1 ft-3">
+                    <ul>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Popular courses</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <div class="dropup">
+                        <button type="button" class="btn button--white dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-globe-americas"></i> &nbsp;&nbsp; English
+                        </button>
+                        <div class="dropdown-menu mymenu">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">日本語</a>
+                            <a class="dropdown-item" href="#">Español</a>
+                            <a class="dropdown-item" href="#">Français</a>
+                            <a class="dropdown-item" href="#">한국어</a>
+                            <a class="dropdown-item" href="#">తెలుగు</a>
+                            <a class="dropdown-item" href="#">Vietnamese</a>
+                            <a class="dropdown-item" href="#">ภาษาไทย</a>
+                            <a class="dropdown-item" href="#">Polki</a>
+                            <a class="dropdown-item" href="#">Nederlands</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerdown border-top">
+            <div class="row">
+                <div class="col-12 col-md-6 footerdownleft">
+                    <img src="./img/logo-coral.svg" alt="logofooter"> Copyright © 2019 Udemy, Inc.
+                </div>
+                <div class="col-12 col-md-6 footerdownright">
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy Policy and Cookie Policy</a></li>
+                    </ul>
+                    <ul>
+                        <li class="menu"><a href="#">Sitemap</a></li>
+                        <li class="menu"><a href="#">Popular courses</a></li>
+                        <li class="menu"><a href="#"">Get the app</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+     <!-- END FOOTER-->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                                crossorigin="anonymous"></script>
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                                    crossorigin="anonymous"></script>
+                                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                                    crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>

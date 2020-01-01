@@ -1,0 +1,84 @@
+.button--white {
+  a {
+    text-decoration: none;
+    color: #0c849d;
+    font-weight: normal;
+  }
+  border: 1px solid #0c849d;
+}
+.btnhover {
+  :hover {
+    color: $co-red;
+  }
+}
+.slider-About {
+  background: url(../img/aboutcarousel.jpg) no-repeat;
+  background-size: cover;
+  height: 490px;
+  position: relative;
+  .slider_content_About {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 20%;
+    //transform: translate(-50% -50%);
+    transform: translateY(-50%);
+    h1 {
+      color: white;
+      font-size: 85px;
+      font-family: "Open Sans", sans-serif;
+      line-height: 90px;
+      letter-spacing: -1.5px;
+      text-shadow: none;
+      text-align: center;
+      width: 70%;
+    }
+    .imgAbout {
+      width: 230px;
+      position: absolute;
+      bottom: -60%;
+      right: 10%;
+    }
+  }
+  .opacity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 490px;
+    z-index: 5;
+    opacity: 0.4;
+    transition: opacity 0.3s ease-out;
+    background-color: rgba(0, 0, 0, 1);
+  }
+}
+.intro-about {
+  background: linear-gradient(213deg, #ec5252, #6e1a52);
+  padding: 4px;
+  .intro-about-content {
+    position: relative;
+    width: 100%;
+    max-width: 1144px;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 0;
+    p{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        a{
+            color: $co-white;
+            span{
+                color: #f5c252;
+                font-weight: 600;
+                padding-right: 3px;
+            }
+            &:hover{
+                color: $co-white;
+                border-bottom: 1px solid #fff;
+                cursor: pointer;
+            }
+        }
+    }
+  }
+}

@@ -1,0 +1,270 @@
+//background: $co-gray-5;
+.container {
+  .course_detail {
+    position: relative;
+    height: 300px;
+    background: $co-gray-4;
+    color: $co-white;
+    .course_detail_left {
+      padding-bottom: $h2;
+      position: relative;
+      background: $co-gray-3;
+      img {
+        width: 100%;
+      }
+      .price {
+        .new-price {
+          font-weight: $fw-bold-1;
+          display: inline;
+          font-size: $h2 + 10;
+        }
+        .old-price {
+          text-decoration: line-through;
+          font-size: $h2 - 7;
+          color: $co-gray-4;
+        }
+        .priceoff {
+          font-size: $h2 - 7;
+          color: $co-gray-4;
+        }
+      }
+      .btn-block {
+        height: 50px;
+      }
+      .button--white {
+        a {
+          text-decoration: none;
+          color: $co-blue;
+        }
+        &:hover {
+          color: #29303b;
+          border-color: #29303b;
+          background: $co-gray-5;
+        }
+      }
+
+      .infoCourse {
+        p {
+          font-size: $fs-medium + 3;
+        }
+        .infoUl-left {
+          li {
+            line-height: $h2;
+            i {
+              width: $h2;
+              padding-right: $fs-small - 3;
+            }
+          }
+        }
+      }
+      .advertisement {
+        position: absolute;
+        bottom: -170px;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
+          0 3px 1px 0 rgba(20, 23, 28, 0.1);
+        border-radius: 4px;
+        color: #505763;
+        padding: 3px;
+        .ad-inside {
+          padding: 20px 64px;
+          .ad-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 0;
+            padding-bottom: 4px;
+          }
+          p {
+            color: #686f7a;
+            margin-bottom: 4px;
+          }
+          a {
+            text-decoration: none;
+            color: $co-blue;
+            font-weight: 700;
+            padding-right: 20px;
+            &:hover {
+              color: #003845;
+            }
+          }
+        }
+      }
+    }
+    .course_detail_right {
+      .card-title {
+        font-size: $h2 + 5;
+        color: $co-white;
+        font-weight: $fw-bold-0;
+        line-height: $h1;
+      }
+      .card-text {
+        color: $co-white;
+        b {
+          color: $co-white;
+        }
+      }
+      .detail {
+        height: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $co-white;
+      }
+      .rating {
+        .rating_star {
+          i {
+            color: $co-yellow;
+          }
+        }
+        .rating_info {
+          b,
+          span {
+            color: $co-white;
+          }
+        }
+      }
+      .about {
+        max-width: 850px;
+        background-color: #f9f9f9;
+        border: 1px solid #dedfe0;
+        padding: $fs-medium - 5 $fs-medium;
+        .about-title {
+          font-size: $h2 - 3;
+          font-weight: $fw-bold-0;
+          margin: 0 0 $fs-small - 3;
+        }
+        .infoUl-right {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          .item-columns {
+            width: 50%;
+          }
+          .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            i {
+              width: $h2;
+              padding-right: $fs-small - 3;
+              color: $co-gray-2;
+            }
+          }
+        }
+      }
+    }
+  }
+  .aboutCourse {
+    padding-left: 380px;
+    padding-top: 280px;
+
+    .aboutCourse_title_left {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0 0 10px;
+    }
+    .aboutCourse_title_right {
+      display: flex;
+      justify-content: flex-end;
+      a {
+        color: $co-blue;
+        text-decoration: none;
+        &:hover {
+          color: #003845;
+        }
+      }
+    }
+    .card {
+      span {
+        color: $co-blue;
+        font-weight: bold;
+      }
+      .btn-link {
+        text-decoration: none;
+        color: $co-black-light;
+      }
+      .collapsing {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.4s;
+        -webkit-transition-property: height, visibility;
+        transition-property: height, visibility;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        -webkit-transition-timing-function: ease;
+        transition-timing-function: ease;
+      }
+    }
+  }
+}
+.border-bt {
+  border-bottom: 1px solid #dee2e6;
+  // box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
+  //   0 3px 1px 0 rgba(20, 23, 28, 0.1);
+}
+.banner {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  .row {
+    align-items: center;
+    box-sizing: content-box;
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    .banner-img {
+      img {
+        width: 98px;
+        margin-right: 20px;
+      }
+    }
+    .banner-title {
+      .banner-title-p {
+        font-size: 16px;
+        font-weight: $fw-bold-0;
+        line-height: 1.5em;
+        margin-bottom: 4px;
+        color: #29303b;
+      }
+      .banner-title-span {
+        color: #686f7a;
+        font-size: 15px;
+      }
+    }
+    .banner-btn {
+      .btn-banner {
+        margin-left: 24px;
+        min-width: 160px;
+        color: #007791;
+        background-color: #fff;
+        border: 1px solid #007791;
+        padding: 11px 12px;
+        font-weight: 600;
+        &:hover {
+          color: #003440;
+          background-color: #fff;
+          border-color: #003440;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .course_detail_left {
+    .advertisement {
+      .ad-inside {
+        padding: 20px 34px !important;
+      }
+    }
+  }
+  .aboutCourse {
+    padding-left: 320px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  
+}

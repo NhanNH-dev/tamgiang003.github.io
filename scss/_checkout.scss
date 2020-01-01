@@ -1,0 +1,54 @@
+.container {
+  margin-top: 50px;
+  .checkout-left {
+    .checkout-title {
+      font-size: $h2 - 1;
+      font-weight: $fw-bold-0;
+      line-height: 1.33em;
+    }
+    .checkout-form {
+      border: 1px solid #dedfe0;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      .form-group {
+        margin: 0 15px;
+        padding: 20px;
+        .form-control {
+          height: 50px;
+        }
+      }
+      .inputSmall-l {
+        padding-top: 0;
+        padding-right: 0;
+      }
+      .inputSmall-r {
+        padding-top: 0;
+        padding-left: 0;
+      }
+    }
+  }
+  .checkout-right {
+    .advertisement {
+      background-color: #fff;
+      box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
+        0 3px 1px 0 rgba(20, 23, 28, 0.1);
+      border-radius: 4px;
+      color: #505763;
+      padding: 35px 10px;
+      .ad-inside {
+        padding: 10px 20px;
+        .ad-title {
+          font-weight: 700;
+          margin-top: 0;
+          padding-bottom: 4px;
+        }
+        .button-login {
+          height: 55px;
+        }
+        .button--white {
+          height: 50px;
+        }
+      }
+    }
+  }
+}

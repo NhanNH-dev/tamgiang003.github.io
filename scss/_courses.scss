@@ -1,0 +1,158 @@
+.courses {
+  margin: $mg20;
+  .course_content {
+    width: 90%;
+    margin: auto;
+    .course_left {
+      position: relative;
+      background-color: $co-gray-5;
+      .course_intro {
+        position: absolute;
+        padding-top: $pd20;
+        top: 35%;
+        left: 14%;
+        span {
+          @include text($color-black-0, $fw-bold-0, $fs-medium + 6);
+        }
+        p {
+          @include text($color-black-0, $fw-normal, $fs-medium + 3);
+        }
+      }
+    }
+    .mytab {
+      .nav {
+        justify-content: space-between;
+        border: none;
+        &:hover {
+          .nav-link {
+            border: none;
+          }
+        }
+        .nav-item {
+          .nav-link.active {
+            border: none;
+            border-bottom: 5px solid $co-blue;
+          }
+          .nav-link {
+            @include text($color-black-0, $fw-normal, $fs-medium);
+            border: none;
+          }
+        }
+      }
+      .tab-content {
+        margin-top: $mg15;
+        position: relative;
+        .card {
+          a {
+            text-decoration: none;
+          }
+          margin-bottom: 3px;
+          box-shadow: 0 4px 3px -2px rgba(20, 23, 28, 0.2);
+          .card-title {
+            @include text($color-black-0, $fw-bold-0, $fs-medium);
+          }
+          .card-text {
+            @include text($co-gray-4, $fw-bold-0, $fs-small);
+          }
+          .rating {
+            .rating_star {
+              i {
+                @include text($co-yellow, $fw-bold-0, $fs-small);
+              }
+            }
+            .rating_info {
+              @include text($color-black-0, $fw-normal, $fs-small);
+              padding-left: $pd12;
+            }
+          }
+          .price {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: $mg15;
+            .old-price {
+              @include text($co-black-light, $fw-normal, $fs-small);
+              text-decoration: line-through;
+              margin-right: $mg10;
+              padding-top: 5px;
+            }
+            .new-price {
+              @include text($color-black-0, $fw-bold-0, $fs-medium + 3);
+              margin-bottom: 0;
+            }
+          }
+          &:hover {
+            transition: all 0.4s;
+            box-shadow: 0 3px 8px 3px rgba(20, 23, 28, 0.2);
+          }
+          &:hover img {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}
+.student {
+  .student_content {
+    width: 90%;
+    margin: auto;
+    .title {
+      @include text($co-gray-4, $fw-normal, $fs-medium + 4);
+    }
+    .nhan {
+      .card {
+        a {
+          text-decoration: none;
+        }
+        margin-bottom: 3px;
+        box-shadow: 0 4px 3px -2px rgba(20, 23, 28, 0.2);
+        .card-title {
+          @include text($color-black-0, $fw-bold-0, $fs-medium);
+        }
+        .card-text {
+          @include text($co-gray-4, $fw-bold-0, $fs-small);
+        }
+        .rating {
+          .rating_star {
+            i {
+              @include text($co-yellow, $fw-bold-0, $fs-small);
+            }
+          }
+          .rating_info {
+            @include text($color-black-0, $fw-normal, $fs-small);
+            padding-left: $pd12;
+          }
+        }
+        .price {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: $mg15;
+          .old-price {
+            @include text($co-black-light, $fw-normal, $fs-small);
+            text-decoration: line-through;
+            margin-right: $mg10;
+            padding-top: 5px;
+          }
+          .new-price {
+            @include text($color-black-0, $fw-bold-0, $fs-medium + 3);
+            margin-bottom: 0;
+          }
+        }
+        &:hover {
+          transition: all 0.4s;
+          box-shadow: 0 3px 8px 3px rgba(20, 23, 28, 0.2);
+        }
+        &:hover img {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991.9px) {
+  .course_left {
+    .course_intro {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.button--white{
+    @include button($co-gray-4,$co-white,$co-black-light,600,$co-white);
+    border: 1px solid $co-black-light;
+    height: 40px;
+    &:hover {
+        background-color:$co-white ;
+    }
+}
+.button--red{
+    @include button($co-white,$co-red,$co-white,600,$co-white);
+    border: 1px solid $co-red;
+    width: 90px;
+    height: 40px;
+    &:cursor{
+        box-shadow: none;
+    } 
+    &:hover {
+        background-color:$co-red-1;
+        color: $co-white;
+    }
+}
+.button-login{
+    @include button($co-white,$co-red,$co-white,600,$co-white);
+    border: 1px solid $co-red;
+    width: 100%;
+    &:cursor{
+        box-shadow: none;
+    } 
+    &:hover {
+        background-color:$co-red-1;
+        color: $co-white;
+    }
+}
+.button--teach{
+    @include button($co-white,$co-red,$co-white,600,$co-white);
+    border: 1px solid $co-red;
+    min-width: 90px;
+    &:cursor{
+        box-shadow: none;
+    } 
+    &:hover {
+        background-color:$co-red-1;
+        color: $co-white;
+    }
+}

@@ -1,0 +1,35 @@
+.intro {
+  background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+  .intro_content {
+    width: 90%;
+    margin: auto;
+    .row {
+      .col-md-4 {
+        .intro_item {
+          display: flex;
+          padding: $pd15 - 2;
+          .icon i {
+            @include text($co-white, none, 47px);
+            margin: $mg15;
+          }
+          .icon_content {
+            margin-top: $mg15;
+            span {
+              @include text($co-white, none, $fs-medium);
+            }
+            b {
+              font-size: $fs-medium + 2;
+              color: $co-white;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .intro {
+    display: none;
+  }
+}

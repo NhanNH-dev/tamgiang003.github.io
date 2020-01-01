@@ -1,0 +1,59 @@
+.top {
+  width: 90%;
+  margin: auto;
+  .top_content {
+    margin-top: 40px;
+    p {
+      @include text($color-black-0, $fw-bold-0, $h2);
+    }
+  }
+  .top_item {
+    .top_item1 {
+      box-shadow: 2px 4px 4px -2px rgba(20, 23, 28, 0.2);
+      border: 1px solid $co-gray-1;
+      padding: $pd12 - 2 $pd15 + 5;
+      a {
+        text-decoration: none;
+        display: flex;
+        i {
+          font-size: 35px;
+        }
+        p {
+          @include text($co-black-1, $fw-normal, $fs-medium + 3);
+          margin-left: 8px;
+          margin-top: 8px;
+        }
+      }
+      &:hover {
+        transition: all 0.4s;
+        box-shadow: 0 3px 8px 0px rgba(20, 23, 28, 0.2);
+      }
+    }
+  }
+  @include respond-to("extra-large") {
+    .usb,.it {
+      a {
+        p {
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+    .top_item{
+      .row2{
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+@media only screen and (min-width:1200px) and (max-width: 1366px){
+  .usb{
+    padding: 14px 0 !important;
+    
+    p{
+      max-width: 190px;
+      margin-bottom: 0;
+      margin-top: 0 !important;
+    }
+  }
+}

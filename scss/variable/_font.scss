@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=vietnamese');
+
+//font size
+$myfont: 'Lexend Zetta', sans-serif;
+$fs-small: 13px;
+$fs-medium: 15px;
+$h2: 25px;
+$h1: 40px;
+
+//font-weight
+$fw-normal: normal;
+$fw-bold-0:600;
+$fw-bold-1:700;
+$fw-bold:bold;
+
+$breakpoints:(
+    'extra-large' : 1200px,
+    'large': 992px,
+    'medium': 779px,
+    'small': 576px,
+)

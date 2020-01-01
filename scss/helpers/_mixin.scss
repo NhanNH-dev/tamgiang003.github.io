@@ -1,0 +1,28 @@
+@mixin text($color, $fw, $fs) {
+  color: $color;
+  font-weight: $fw;
+  font-size: $fs;
+}
+@mixin button($color, $bg-color, $border-color, $fw, $bg-hover) {
+  color: $color;
+  background-color: $bg-color;
+  font-weight: $fw;
+  min-width: 100px;
+  height: 40px;
+  border: 1px solid $border-color;
+  &:hover {
+    background-color: $bg-hover;
+  }
+}
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($map: $breakpoints, $key: $breakpoint ){
+    $value: map-get($map: $breakpoints, $key: $breakpoint);
+    @media screen and (max-width: $value){
+        @content;
+    }
+  }
+  @else{
+    @warn "breakpoint không tồn tại trong breakpoints";
+  }
+}
